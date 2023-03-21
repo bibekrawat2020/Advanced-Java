@@ -1,5 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
+
 public class Main {
     Main() {
         prepareGUI();
@@ -10,11 +11,11 @@ public class Main {
     }
 
     void prepareGUI() {
-        JFrame f = new JFrame("Marksheet");
+        JFrame f = new JFrame("Mark Sheet");
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         f.setSize(400, 400);
         f.setVisible(true);
-        f.setLayout(null);
+        f.setLayout(new GridLayout(9, 2));
 //        container c = f.getContentPane();
 //        f.setBounds(10, 10, 400, 400);
         JLabel l1 = new JLabel("Enter marks in OOT");
@@ -53,7 +54,7 @@ public class Main {
         JLabel l7 = new JLabel(String.valueOf(0.0));
         l7.setBounds(170, 210, 150, 30);
         f.add(l7);
-        JLabel l8 = new JLabel("Divison");
+        JLabel l8 = new JLabel("Division");
         l8.setBounds(10, 250, 150, 30);
         f.add(l8);
         JLabel l9 = new JLabel("1st / 2nd / 3rd / Fail");
